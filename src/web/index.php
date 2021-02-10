@@ -29,7 +29,7 @@ $ps->execute($params);
 $result = $ps->columnCount()>0? $ps->fetchAll(\PDO::FETCH_ASSOC): $ps->rowCount(); 
 
 echo '<h1>Resultado de la base de datos'.$_ENV['DB_DATABASE'].'</h1>';
-echo '<p>Nombre: '.$result[0]['nombre'].'</p>';
+echo '<p class="c-texto" >Nombre: '.$result[0]['nombre'].'</p>';
 echo '<p>Apellido: '.$result[0]['apellido'].'</p>';
 echo '<p>Edad: '.$result[0]['edad'].'</p>';
 } catch (Exception $e) {
