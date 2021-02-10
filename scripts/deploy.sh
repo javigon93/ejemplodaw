@@ -2,7 +2,7 @@
 
 sudo rm -r ./dist/*
 sudo cp -a ./src/web/* ./dist
-sudo sass -o dist/css/ dist/scss/main.scss
+sudo sass dist/scss/main.scss  dist/css/
 sudo docker container stop apache_javier_gonzalez
 sudo docker container rm apache_javier_gonzalez
 sudo docker container stop mariadb_javier_gonzalez
@@ -14,4 +14,5 @@ sudo bash /opt/javier_gonzalez/scripts/mariadb_javier.sh
 sudo docker container exec -it apache_javier_gonzalez docker-php-ext-install pdo pdo_mysql
 sudo docker container exec -it apache_javier_gonzalez a2enmod rewrite
 sudo docker container restart apache_javier_gonzalez
-sudo rm -r /opt/javier_gonzalez/ejemplodaw/*
+sudo rm -r /opt/javier_gonzalez/ejemplodaw/
+sudo mkdir /opt/javier_gonzalez/ejemplodaw
