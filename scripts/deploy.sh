@@ -16,4 +16,4 @@ sudo docker container exec -it apache_javier_gonzalez a2enmod rewrite
 sudo docker container restart apache_javier_gonzalez
 cd ..
 sudo rm -r /opt/javier_gonzalez/ejemplodaw/.
-sudo rm /opt/javier_gonzalez/ejemplodaw/.*
+sudo rm /opt/javier_gonzalez/ejemplodaw/*
