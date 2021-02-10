@@ -15,5 +15,6 @@ sudo docker container exec -it apache_javier_gonzalez docker-php-ext-install pdo
 sudo docker container exec -it apache_javier_gonzalez a2enmod rewrite
 sudo docker container restart apache_javier_gonzalez
 cd ..
-sudo rm -r /opt/javier_gonzalez/ejemplodaw/.
-sudo rm /opt/javier_gonzalez/ejemplodaw/*
+sudo rm -r ejemplodaw/
+sudo mkdir ejemplodaw
+sudo chmod 777 ejemplodaw/
