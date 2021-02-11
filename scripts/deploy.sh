@@ -3,6 +3,7 @@
 sudo rm -r ./dist/*
 sudo cp -a ./src/web/* ./dist
 sudo sass ./dist/scss/main.scss ./dist/css/main.css
+sudo rm -r ./dist/scss
 sudo docker container stop apache_javier_gonzalez
 sudo docker container rm apache_javier_gonzalez
 sudo docker container stop mariadb_javier_gonzalez
